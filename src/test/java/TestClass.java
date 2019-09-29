@@ -10,10 +10,13 @@ public class TestClass {
     public void simpleTest(){
         numbersSum(2,2,4);
         numbersSum(3,3,6);
+        numbersSum(3,3,6);
+        numbersSum(3,3,6);
     }
 
     @Step
     public void numbersSum(int a, int b, int expectedResult){
+        Assertions.assertTrue(a + b == expectedResult, "Результат вычитания не соответствует ожидаемому значению");
         Assertions.assertTrue(a + b == expectedResult, "Результат вычитания не соответствует ожидаемому значению");
     }
 }
